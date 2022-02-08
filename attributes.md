@@ -7,7 +7,7 @@
 You can also apply this to functions, or even types
 ```lm
 # The result of the function `sum` might be unused
-@result_unsused			# the return value of the function might be unused
+@unused_result			# the return value of the function might be unused
 @unused					# the function itself might not be used
 fn sum(imut a, b: i32) -> i32
 {
