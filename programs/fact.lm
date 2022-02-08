@@ -1,0 +1,14 @@
+fn fact(imut num: i32) -> i32 {
+	if (num <= 1) {
+		return 1;
+	}
+
+	return num * fact(num - 1);
+}
+
+fn main() -> i32 {
+	imut num = io::read().as<i32>();
+	io::write("The factory of {} is {}", num, fact(num));
+
+	return 0;
+}
