@@ -1,0 +1,75 @@
+#-
+	As of 08.02.2022, this is what a Vector2D type would look like in lumin
+	It's missing a lot, yes, it's just to showcase what lumin looks like, and how it would be used.
+	Also for me to get a feeling of the language, and improve it's syntax.
+-#
+struct vec2d {
+	# "constructor"
+	fn ::new() -> vec2d {
+		return vec2d {
+			x: 0.0,
+			y: 0.0
+		};
+	}
+
+	fn ::new(imut a, b: f64) -> vec2d {
+		return vec2d {
+			x: x,
+			y: y
+		};
+	}
+
+	fn ::zero() -> vec2d {
+		return vec2d::new();
+	}
+
+	fn len_sq() -> f64 {
+		return x * x + y * y;
+	}
+
+	fn len() -> f64 {
+		return math::sqrt(len_sq());
+	}
+
+	fn norm() -> vec2d {
+		imut l = len();
+
+		return vec2d {
+			x: x / l,
+			y: y / l
+		};
+	}
+
+	# operator add
+	fn (+) (imut a, b: vec2d) -> vec2d {
+		return vec2d {
+			x: a.x + b.x,
+			y: a.y + b.y
+		};
+	}
+
+	# operator sub
+	fn (-) (imut a, b: vec2d) -> vec2d {
+		return vec2d {
+			x: a.x - b.x,
+			y: a.y - b.y
+		};
+	}
+
+	# operator dot
+	fn (*) (imut a, b: vec2d) -> f64 {
+		return a.x * b.x + b.y * a.y;
+	}
+
+	mut x, y: f64;
+}
+
+# you can use it like this:
+mut a = vec2d::new(0.0, 2.0);
+imut b = vec2d::new(4.0, 2.0);
+
+imut dot = a * b;	# 12.0
+imut sum = a + b;	# { 4.0, 4.0 }
+imut diff = a - b;	# { -4.0, 0.0 }
+imut len = a.len();	# 2.0
+a = a.norm();
