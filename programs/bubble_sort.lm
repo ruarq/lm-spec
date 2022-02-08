@@ -1,10 +1,10 @@
-fn swap(mut a: i32&, mut b: i32&) {
+fn swap(mut a: &mut i32, mut b: &mut i32) {
 	imut temp = a;
 	a = b;
 	b = temp;
 }
 
-fn bubble_sort(mut array: Array<i32>&) {
+fn bubble_sort(mut array: &mut Array<i32>) {
 	for (mut i = 0; i < array.size(); ++i) {
 		for (mut j = i + 1; j < array.size(); ++j) {
 			if (array[j] < array[i]) {
@@ -18,7 +18,7 @@ fn main() -> i32 {
 	mut array: Array<i32> = ...; # fill up the array with random numbers somehow
 	
 	io::write("Array  {}", array);
-	bubble_sort(&array);
+	bubble_sort(&mut array);
 	io::write("Sorted {}", array);
 
 	return 0;
