@@ -1,6 +1,5 @@
 # Primitive types
-The *default*, *primitive types* or *standard types* that Lumin supports,
-are `u8`, `u16`, `u32`, `u64`, `i8`, `i16`, `i32`, `i64`, `f32`, `f64`, `bool`, `char`, `wchar`, `long` and `ulong`
+The *default*, *primitive types* or *standard types* that Lumin supports: `u8`, `u16`, `u32`, `u64`, `i8`, `i16`, `i32`, `i64`, `f32`, `f64`, `bool`, `char`, `wchar`, `long` and `ulong`
 
 ## Unsigned integer types
 ### `u8`
@@ -39,7 +38,7 @@ are `u8`, `u16`, `u32`, `u64`, `i8`, `i16`, `i32`, `i64`, `f32`, `f64`, `bool`, 
 
 ## Other types
 ### `bool`
-Special type for `true`/`false` values that is like a `u8` but can only have the values `1` or `0` / `true` or `false`
+Special type for `true` or `false` values that is like a `u8` but can only have the values `1` or `0` / `true` or `false`
 
 ### `char`
 Alias for `u8`
