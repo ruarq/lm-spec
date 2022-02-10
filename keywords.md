@@ -7,5 +7,5 @@
 `bool`, `char`, `long`, `ulong`
 `import`, `module`
 `local`, `struct`, `fn`, `imut`, `mut`,
-`if`, `elif`, `else`, `break`, `continue`, `goto`,
+`if`, `elif`, `else`, `break`, `continue`,
 `match`

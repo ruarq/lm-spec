@@ -1,5 +1,4 @@
 fn main() -> i32 {
 	io::write("Hello World!\n");
-
-	return 0;
+	ret 0;
 }

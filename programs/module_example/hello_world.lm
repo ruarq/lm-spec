@@ -1,0 +1,7 @@
+import std::io;
+
+module hello_world {
+	fn print() {
+		io::write("Hello world!\n");
+	}
+}
