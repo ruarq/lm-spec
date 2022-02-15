@@ -2,7 +2,7 @@ import hello_world;
 
 fn main() -> i32 {
 	hello_world::print();
-	return 0;
+	ret 0;
 }
 
 # or
@@ -11,5 +11,5 @@ import hello_world::print;
 
 fn main() -> i32 {
 	print();
-	return 0;
+	ret 0;
 }

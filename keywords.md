@@ -6,6 +6,7 @@
 `true`, `false`,
 `bool`, `char`, `long`, `ulong`
 `import`, `module`
-`local`, `struct`, `fn`, `imut`, `mut`,
+`local`, `struct`, `fn`, `let`, `mut`,
 `if`, `elif`, `else`, `break`, `continue`,
+`ret`,
 `match`

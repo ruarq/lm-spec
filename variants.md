@@ -16,7 +16,7 @@ mut value: Value = 42;
 # match against value
 # and do different things depending on the tag
 # replace '?' with what you'd like to do
-match (value) {
+match (typeof(value)) {
 	i64 => ?,
 	f64 => ?,
 	string => ?

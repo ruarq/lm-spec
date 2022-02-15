@@ -1,7 +1,7 @@
 # Functions
 ## Definition
 ```lm
-fn add(imut a, b: i32, imut c: f32) -> f32 {
-	return $f32(a + b) + c;
+fn add(a, b: i32, imut c: f32) -> f32 {
+	ret $f32(a + b) + c;
 }
 ```

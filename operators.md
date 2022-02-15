@@ -11,7 +11,7 @@ struct integer {
 	# create a `+` operator for the type integer.
 	# imut x, y: integer = integer::new();
 	# imut z = x + y;
-	fn (+) (imut a, b: &integer) -> integer {
+	fn (+) (a, b: &integer) -> integer {
 		return a.value + b.value;
 	}
 

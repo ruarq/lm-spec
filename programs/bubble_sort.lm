@@ -1,5 +1,5 @@
 fn swap(mut a: &mut i32, mut b: &mut i32) {
-	imut temp = a;
+	let temp = a;
 	a = b;
 	b = temp;
 }
